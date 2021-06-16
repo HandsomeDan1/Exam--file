@@ -1,0 +1,95 @@
+$accentcolor: #E27B3A;
+$productsbackground: #FCF2EB;
+$alltextcolor: #170C04;
+
+$poppins: 'Poppins', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+$popp700: 700;
+$popp500: 500;
+$popp400: 400;
+$robo400: 400;
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 31px;
+  width: 1144px;
+  height: 39px;
+
+  &__logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: $alltextcolor;
+  }
+
+  &__navbar {
+    &__item {
+      margin: 0 20px;
+      font-family: "Roboto", sans-serif;
+      color: $alltextcolor;
+
+      &:hover {
+        border-bottom: 2px solid $accentcolor;
+      }
+    }
+  }
+}
+
+.welcome {
+  display: flex;
+  width: 1344px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__textdiv {
+    margin-left: 130px;
+    position: absolute;
+    margin-right: auto;
+    &__title {
+      margin-top: 158px;
+      font-family: $poppins;
+      font-size: 100px;
+      font-weight: $popp700;
+      color: $alltextcolor;
+    }
+
+    &__buttons {
+      display: flex;
+      margin-top: 50px;
+      align-items: center;
+      &__buy{
+        background-color: $accentcolor;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 24px;
+        width: 123px;
+        height: 48px;
+        text-align: center;
+      }
+      &__details{
+        text-align: center;
+        margin-left: 20px;
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid #E27B3A;
+        width: 123px;
+        height: 48px;
+        border-radius: 24px;
+      }
+    }
+  }
+
+  &__puppy {
+    margin-top: 30px;
+    margin-left: auto;
+  }
+}
